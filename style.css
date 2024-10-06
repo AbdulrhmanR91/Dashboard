@@ -1,0 +1,180 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family:sans-serif;
+}
+
+body{
+    background-color: #001;
+    display: flex;
+    gap: 10px;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.img-box{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: solid white;
+    flex-shrink: 0;
+}
+
+.img-box img{
+    width: 150%;
+    position: relative;
+    right: 15px;
+}
+
+.menue {
+    background-color: #123;
+    width: 70px;
+    height: 100vh;
+    padding: 20px;
+    overflow: hidden;
+    overflow-y: auto; /* إضافة إمكانية التمرير العمودي */
+    transition: width 0.5s; /* تحسين الانتقال */
+    position: sticky; /* جعل القائمة ثابتة */
+    top: 0; /* تثبيت القائمة في الأعلى */
+}
+
+.menue::-webkit-scrollbar {
+    width: 5px;
+}
+
+.menue::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.menue::-webkit-scrollbar-thumb {
+    background: #ffffff3d;
+    border-radius: 5px;
+}
+
+
+
+ul{
+    list-style: none;
+    position: relative;
+    height: 95%;
+}
+
+ul li a{
+
+    display: block;
+    display: flex;
+    gap: 40px;
+    text-decoration: none;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    transition: 0.5s;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+i{
+    font-size: 20px;
+}
+
+
+ul li a:hover ,.active , .content .data-info .box:hover , td:hover{
+    background-color: rgba(227, 227, 244, 0.67);
+}
+
+
+.logOut{
+    position:absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.logOut a{
+    background-color: red;
+}
+
+.menue:hover{
+    width: 400px;
+    transition: .5s;
+}
+.content{
+    width: 100%;
+   margin: 10px;
+}
+.title-info{
+    background-color: rgb(0, 98, 255);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.data-info{
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+    align-items:center ;
+    flex-wrap: wrap;
+}
+
+.data-info .box{
+    flex-basis: 150px;
+    height: 200px;
+    background-color: #123;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    border-radius: 8px;
+    flex-grow: 1;
+}
+
+.data-info .box i{
+    font-size: 50px;
+}
+
+.data-info .box .data{
+    text-align: center;
+    font-size: 20px;
+}
+
+table{
+    margin: 20px 0;
+    width: 100%;
+    text-align: center;
+    border-spacing: 5px;
+}
+
+td,th{
+    background-color: #123;
+    height: 40px;
+    border-radius: 8px;
+}
+
+th{
+    background-color: rgb(0, 102, 255);
+}
+
+.price , .count{
+    padding: 6px;
+    border-radius: 6px;
+}
+
+.price{
+    background-color: green;
+}
+
+.count{
+    background-color: gold;
+    color: black;
+}
